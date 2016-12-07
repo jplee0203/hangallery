@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html>
+<title>Han Gallery</title>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS.CSS">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="gallery(6).css">
+        
+    
+
+    
+             
+<style>
+body,h1,h2,h3,h4,h5,h6,p,div {font-family: "Gill San", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+    
+    @import url('https://fonts.googleapis.com/css?family=Petrona');
+    
+@font-face {
+    font-family: "Gill San";
+    
+}
+    
+  
+
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("snowyday.jpg");
+    min-height: 100%;
+}
+.w3-navbar li a {
+    padding: 16px;
+    float: left;
+    }
+    
+/* Snow */
+    
+    #snow{
+	background: none;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+    
+.h1 {color: darkslateblue;
+        
+    }
+    
+    .logo{
+        padding: 10px;
+        
+      
+    }
+   
+
+
+    /*****************gallery*********************/
+    
+html, body { background: #333 url("006.jpg"); }
+
+     .gallery {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  background: #333;
+}
+.m {
+  display: block;
+  width: 232px;
+  height: 500px;
+  position: relative;
+  float: right;
+  padding: 0 30px 0 40px;
+  margin-top: 40px;
+  box-shadow: -10px 0 0 #D6D6D6;
+}
+.m .li {
+  display: block;
+  width: 100px;
+  height: 72px;
+  position: relative;
+  z-index: 1000;
+  float: left;
+    left: 20%
+  margin: 0 10px 10px 0;
+   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+
+  outline: none;
+  cursor: pointer;
+}
+.m .li:focus img {
+  opacity: 0.3;
+}
+.m .li > img {
+  width: 100px;
+  height: 50px;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cube-wrap {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  right: 120%;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+   
+}
+
+.cube {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(0deg) translateZ(-250px);
+          transform: rotateX(0deg) translateZ(-250px);
+  -webkit-transition: 2s 9999999s;
+  transition: 2s 9999999s;
+    
+}
+.cube div {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #222;
+}
+.cube .front {
+  -webkit-transform: rotateY(0deg) translateZ(250px);
+          transform: rotateY(0deg) translateZ(250px);
+}
+.cube .back {
+  -webkit-transform: rotateX(180deg) translateZ(250px);
+          transform: rotateX(180deg) translateZ(250px);
+}
+.cube .right {
+  -webkit-transform: rotateY(90deg) translateZ(250px);
+          transform: rotateY(90deg) translateZ(250px);
+}
+.cube .left {
+  -webkit-transform: rotateY(-90deg) translateZ(250px);
+          transform: rotateY(-90deg) translateZ(250px);
+}
+.cube .top {
+  -webkit-transform: rotateX(90deg) translateZ(250px);
+          transform: rotateX(90deg) translateZ(250px);
+}
+.cube .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(250px);
+          transform: rotateX(-90deg) translateZ(250px);
+}
+.cube img {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.li:focus ~ .cube-wrap .cube {
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.m1:focus ~ .cube-wrap .cube {
+  -webkit-transform: translateZ(-250px) rotateY(0deg);
+          transform: translateZ(-250px) rotateY(0deg);
+}
+
+.m2:focus ~ .cube-wrap .cube {
+  -webkit-transform: translateZ(-250px) rotateY(-90deg);
+          transform: translateZ(-250px) rotateY(-90deg);
+}
+
+.m3:focus ~ .cube-wrap .cube {
+  -webkit-transform: translateZ(-250px) rotateX(-90deg);
+          transform: translateZ(-250px) rotateX(-90deg);
+}
+
+.m4:focus ~ .cube-wrap .cube {
+  -webkit-transform: translateZ(-250px) rotateY(90deg);
+          transform: translateZ(-250px) rotateY(90deg);
+}
+
+.m5:focus ~ .cube-wrap .cube {
+  -webkit-transform: translateZ(-250px) rotateX(90deg);
+          transform: translateZ(-250px) rotateX(90deg);
+}
+
+.m6:focus ~ .cube-wrap .cube {
+  -webkit-transform: translateZ(-250px) rotateX(180deg);
+          transform: translateZ(-250px) rotateX(180deg);
+}
+
+
+    
+/***************dropdown****************/
+   
+    .poster {
+        width: 275px;
+        height: 400px;
+        right:10px;
+        top: 100px;
+        
+    }
+    
+    .card-container {
+  position: relative;
+  flex-wrap: wrap;
+  overflow: hidden;
+        top: -60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: auto;
+}
+
+.card {
+  min-width: 275px;
+  width: 275px;
+  position: relative;
+  margin: 15px 15px;
+  height: 350px;
+  border-radius: 7px;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.2s all linear;
+  border: 1px solid rgba(128, 128, 128, 0.15);
+  box-sizing: border-box;
+
+}
+.card .card-social {
+  position: absolute;
+  height: 75px;
+  width: 100%;
+  background: red;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  top: 275px;
+}
+.card .card-social ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.card .card-social ul li {
+  height: 100%;
+  text-align: center;
+  line-height: 75px;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.card .card-social ul li:hover {
+  text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.7);
+  transition: all 0.1s linear;
+}
+.card .card-image {
+  width: 100%;
+  height: 275px;
+  position: relative;
+  background-image: url("");
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.card .card-info {
+  position: relative;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  top: -265px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font-family: "Gill San";
+  color: rgba(255, 255, 255, 0.85);
+}
+.card .card-info .card-title {
+  line-height: 35px;
+  height: 35px;
+  position: relative;
+  top: 0px;
+  font-size: 25px;
+  text-align: center;
+  background: #000000;
+  box-shadow: 5px 5px 10px 2px rgba(79, 134, 147, 0.3);
+}
+.card .card-info .card-detail {
+  line-height: 1.5em;
+  font-size: 1em;
+  height: 220px;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  top: 5px;
+  padding: 5px 20px 0px 20px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: center top;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.card:hover {
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.card:hover .card-info .card-title {
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.3s all linear;
+}
+.card:hover .card-info .card-detail {
+  opacity: 1;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.35s all linear;
+  transition-delay: 0.1s;
+  transform: scaleY(1);
+}
+
+.card:nth-of-type(1) .card-image {
+  background-image: url(yellow.jpg);
+}
+.card:nth-of-type(2) .card-image {
+  background-image: url("blue.jpg");
+}
+.card:nth-of-type(3) .card-image {
+  background-image: url("red.jpg");
+}
+
+    
+    
+    
+/****************************Zoom**********************/
+ 
+
+.item {
+  position: relative;
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: 100%;
+max-height: 100%;
+}
+.item img {
+  max-width: 100%;
+  height: 210px;
+margin: 10px;
+    
+    
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+    
+    
+.item2 {
+  position: relative;
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: 100%;
+max-height: 100%;
+}
+.item2 img {
+  max-width: 100%;
+  height: 200px;
+    
+    
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item2:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+    
+#about
+    {
+      padding: 300px; 
+        width: 100%;
+        
+    }
+    
+.aboutp
+    {
+        padding: 10px;
+    }
+    
+.aboutp1
+    {
+        padding:2px;
+    }
+    
+    .aboutcard
+        {box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            width: 100%;
+          
+                }
+        
+    .aboutcard1
+        {box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            width:200px;
+            float;left;
+          
+    }
+    
+    
+
+/******** Gallery Info******************/
+    
+    .galleryinfo {
+        float:right;
+        padding-top: 100px;
+        padding-left: ;
+        padding-right: 4%;
+    }
+    
+    
+    
+    
+
+
+hr {
+  border: none;
+  border-top: 3px solid black;
+  padding: 4%;
+
+    
+  -moz-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+    
+</style>
+    </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-card-2" id="myNavbar">
+      <a href="#home"><img class="logo" src="logo7.png" alt="logo" style="width:150px;height:70px;"></a>
+    <li>
+      <a href="#home" class="w3-wide">      
+</a>
+        
+        
+        
+    </li>
+    <!-- Right-sided navbar links -->
+    <li class="w3-right w3-hide-small">
+   
+        
+    
+        
+      <a href="#gallery"><i class="fa fa-picture-o"></i>GALLERY</a>
+   
+      <a href="#program"><i class="fa fa-th"></i> PROGRAM</a>
+      <a href="#donation"><i class="fa fa-usd"></i> DONATION &amp; AUCTION</a>
+        
+    <a href="#about"><i class="fa fa-user"></i> ABOUT</a>
+     
+    </li>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <li>
+      <a href="javascript:void(0)" class="w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Sidenav on small screens when clicking the menu icon -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
+  <a href="#gallery" onclick="w3_close()">GALLERY</a>
+  <a href="#about" onclick="w3_close()">ABOUT</a>
+  <a href="#program" onclick="w3_close()">PROGRAM</a>
+  <a href="#donation" onclick="w3_close()">DONATION &amp; AUCTION</a>
+  <a href="#contact" onclick="w3_close()">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+    
+     
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+     <div id="snow">
+  <div class="w3-display-left w3-padding-xxlarge w3-text-white">
+    <span class="w3-jumbo w3-hide-small">The Beauty of Emptiness</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
+   <h1 class="h1">New Exbition This Winter</h1>
+    <p><a href="#gallery" class="w3-btn w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Go to the Gallery</a></p>
+  </div>
+    
+  <div class="w3-display-bottomleft w3-padding-xxlarge w3-text-grey w3-large">
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-linkedin"></i></a>
+  </div>
+    </div>
+    </header>
+
+
+
+    
+<!-- Gallery Section -->
+<div class="w3-container w3-padding-128" id="gallery">
+  
+    <h3 class="w3-center">GALLERY</h3>
+    
+
+   
+
+
+<div class="w3-container w3-padding-128" id="gallery">
+    
+      <div class="container" style="padding-left:2%; padding-bottom:3%;">
+      <div class="photo">
+        <img src="snowyvillage.jpg" />
+        <div class="photo-overlay">
+          <p>Snowy Village by Nagasaki Zzampon</p>
+        </div>
+      </div>
+      
+      <div class="photo">
+        <img src="mge6713_316627_1%5B517235%5D.jpg" />
+        <div class="photo-overlay">
+          <p>The Burden by Hong Gildong</p>
+        </div>
+      </div>
+      
+      <div class="photo">
+        <img src="hangeul.jpg" />
+        <div class="photo-overlay">
+          <p>Hangeul by Han Suk Bong</p>
+        </div>
+      </div>
+      
+      <div class="photo">
+        <img src="snowyday.jpg" />
+        <div class="photo-overlay">
+          <p>Empty by Yuki Kuramoto</p>
+        </div>
+      </div>
+          <div class="photo">
+        <img src="tiger.jpg" />
+        <div class="photo-overlay">
+          <p>White tiger by lau hu</p>
+        </div>
+      </div>
+          <div class="photo">
+        <img src="hanjiartjpg.jpg" />
+        <div class="photo-overlay">
+          <p>Hanji by Sarah Kim</p>
+        </div>
+      </div>
+    
+    </div>
+    <div class="card-container">
+   <div class="card">
+      <div class="card-image"></div>
+    <div class="card-info">
+      <div class="card-title">EXHIBITION</div>
+      <div class="card-detail">
+    
+            <p><br>
+
+
+    <br>
+To find out more about exhibition and activities at the Han Gallery, click at the button below</p>
+        
+        
+        </div>
+    </div>
+      <div class="card-social" style="padding-left:2%; padding-bottom:3%;>
+    <ul>
+           <a href="event.html" target="_blank"><button class="w3-btn w3-black w3-padding-large">EVENT</button></a>
+        </ul>
+    </div>
+  </div>
+    </div>
+    
+    </div>
+    </div>
+    
+    <hr />
+
+<!-- PROGRAM Section -->
+<div class= "programbackground">
+<div class= "programbackground">
+    <div class="w3-container w3-padding-128" id="program">
+ 
+        <h3 class="w3-center"><b>PROGRAM</b></h3>
+        <p class="w3-center w3-large"></p>
+        <br><br>
+  
+
+<div class="card-container">
+
+    
+     <div class="card">
+      <div class="card-image"></div>
+    <div class="card-info">
+      <div class="card-title">NEWS</div>
+      <div class="card-detail">
+    
+            <p><br>
+
+
+    <br>
+Find out more about Events and activities at the Han Gallery</p>
+        
+        
+        </div>
+    </div>
+      <div class="card-social">
+    <ul>
+           <a href="event.html" target="_blank"><button class="w3-btn w3-black w3-padding-large">EVENT</button></a>
+        </ul>
+    </div>
+  </div>
+    
+    
+    
+  <div class="card">
+      <div class="card-image"></div>
+    <div class="card-info">
+      <div class="card-title">TOUR</div>
+      <div class="card-detail">
+    
+            <p><br>
+
+
+    <br>
+To find out more information please check the tour schedule.</p>
+        
+        
+        </div>
+    </div>
+      <div class="card-social">
+    <ul>
+           <a href="Schedule.pdf" target="_blank"><button class="w3-btn w3-black w3-padding-large">SCHEDULE</button></a>
+        </ul>
+    </div>
+  </div>
+    
+    
+  <div class="card">
+    <div class="card-image"></div>
+    <div class="card-info">
+      <div class="card-title">ART CLASS</div>
+      <div class="card-detail">
+        
+          <div class="item2">
+<img src="artclass.jpg">
+              
+ <div class="item-overlay top"></div>
+</div>
+          
+    </div>
+    </div>
+    <div class="card-social">
+    <ul>
+     
+             <a href="registerform.html"><button class="w3-btn w3-black w3-padding-large">REGISTER</button></a>
+        </ul>
+    </div>
+      
+    </div>
+  </div>
+
+</div>
+    <hr />
+    
+
+<!-- Donation Section -->
+<div class="w3-container w3-padding-128 w3-center w3-dark-grey" id="donation">
+    
+     <div class="aboutcard">
+       
+     
+            <h3 style="padding-top:5%;"><b>Donation</b></h3>
+          <p class="w3-opacity"></p>
+            
+          <p class="aboutp1"> Han Gallery is a professional and ethical team comprised of a Board of Directors and staff who are passionately committed to raising funds in support of the Han Gallery&rsquo;s role as the creativity centre for the Greater Vancouver. Our vision is to increase, significantly, the raising of friends and funds for the Art Gallery.
+         Donations and sponsorships to the Han Gallery sustain exhibition and education programs.
+         </p>
+    
+</div>    
+    
+  <h3>Auction </h3>
+  
+    
+    
+    
+  <div class="w3-row-padding" style="margin-top:40px">
+      
+      
+      
+    <div class="w3-third w3-section">
+        
+        
+        
+      <ul class="w3-ul w3-white w3-hover-shadow">
+    <li class="w3-black w3-xlarge w3-padding-32">Hanguel</li>
+     <img src="hangeul.jpg"style="width:400px;height:250px;padding:20px"/>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">current bid</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+            <a href="form.html"><button class="w3-btn w3-black w3-padding-large" >BID</button></a>
+            
+        </li>
+<li><i class="fa fa-comment-o" aria-hidden="true"></i>
+</li>
+<li><div class="heart"></div></li>
+<li><i class="fa fa-share-alt" aria-hidden="true"></i>
+</li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Snowy Village</li>
+        <img src="snowyvillage.jpg" style="width:400px;height:250px;padding:20px"/>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">current bid</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+            <a href="form.html"><button class="w3-btn w3-black w3-padding-large">BID</button></a>
+        </li>
+<li><i class="fa fa-comment-o" aria-hidden="true"></i>
+</li>
+<li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+<li><i class="fa fa-share-alt" aria-hidden="true"></i>
+</li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Emptiness</li>
+ <img src="1329055114_3.jpg" style="width:400px;height:250px;padding:20px"/>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">current bid</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+            <a href="form.html"><button class="w3-btn w3-black w3-padding-large">BID</button></a>
+        </li>
+<li><i class="fa fa-comment-o" aria-hidden="true"></i>
+</li>
+<li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+<li><i class="fa fa-share-alt" aria-hidden="true"></i>
+</li>
+      </ul>
+    </div>
+  </div>
+    <hr />
+</div>
+    
+    
+<!-- About Section -->
+    
+<div class="w3-container w3-padding-128" id="about">
+    
+   
+    
+    <h3 class="w3-center">ABOUT</h3>
+  <p class="w3-center w3-large"></p>
+    
+  <div class="w3-row-padding" style="margin-top:64px">
+    
+    
+
+
+       
+  <div class="w3-row-padding" style="margin-top:64px">
+     
+     <div class="message"> 
+      
+   
+     
+      <div action="message.html" target="_blank">
+          <div class="aboutcard">
+        <img src="building.jpg" alt="Han" style="width:100%">
+        
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="galleryinfo">
+ <div class="card">
+      <div class="card-image"></div>
+    <div class="card-info">
+      <div class="card-title">VISIT US</div>
+      <div class="card-detail">
+    
+            <p>Hours of Operation<br><br>
+
+
+
+December 10, 2016-January 2, 2017<br>
+Daily, 1-9pm (closed December 24 &amp; 25)
+
+<br>admission is Free, .</p>
+        
+        
+        </div>
+    </div>
+      <div class="card-social">
+    <ul>
+           <a href="Schedule.pdf" target="_blank"><button class="w3-btn w3-black w3-padding-large">SCHEDULE</button></a>
+        </ul>
+    </div>
+  </div>
+    </div>
+
+<ul class="m">
+    
+  <li tabindex="1" class="m1 li"><img src="cube1.jpg" alt=""/></li>
+  <li tabindex="2" class="m2 li"><img src="cube2.jpg" alt=""/></li>
+  <li tabindex="3" class="m3 li"><img src="cube3.JPG" alt=""/><figcaption>Hanguel</figcaption></li>
+    <li tabindex="4" class="m4 li"><img src="cube4.jpg" alt=""/></li>
+  <li tabindex="5" class="m5 li"><img src="cube5.jpg" alt=""/></li>
+  <li tabindex="6" class="m6 li"><img src="cube6.jpg" alt=""/></li>
+       
+          
+  <div class="cube-wrap">
+    <div class="cube">
+      <div class="front">  
+          
+          
+          <img src="cube1.jpg" alt=""/></div>
+      <div class="right"><img src="cube2.jpg" alt=""/></div>
+      <div class="top"><img src="cube3.JPG" alt=""/></div>
+      <div class="left"><img src="cube4.jpg" alt=""/></div>
+      <div class="bottom"><img src="cube5.jpg" alt=""/></div>
+      <div class="back"><img src="cube6.jpg" alt=""/></div>
+    </div>
+  </div>
+    
+    
+</ul>
+              </div>
+              
+            <h3>Han Gallery</h3>
+          <p class="w3-opacity">Story of our gallery</p>
+            
+          <p class="aboutp">Founded in 2001 by the Vancouver Asian Community, Han Gallery has been the bridge between the cultures. Our aim is to disseminate the East Asian culture in Vancouver. Han Gallery seeks to make a rich contribution to the cultural life of Vancouver and the surrounding cities. Be sure to take advantage of our rich resources. This year we once again strive to offer a formidable range of arts, programs, and more. <br>
+        
+          Please take the opportunity to venture into the Art Gallery and explore thoughtful and engaging exhibitions by the esteemed artists whose works we’re presenting this year.</p>
+       
+    
+</div>    
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 100 Gallery st,  Vancouver, BC</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 604 469-9292</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: hamgallery@mail.com</p>
+          
+          
+          
+                <br>
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <a href="message.html"><button class="w3-btn w3-padding">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              </button></a>
+        </p>
+          
+      </div>
+    
+    
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+  
+      </div>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-btn w3-padding w3-light-grey w3-hover-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-flickr w3-hover-text-red"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+  <p>By Alex Jinpyo Lee </p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(49.282729, -123.120738);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: true,
+  draggable: true,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidenav when clicking the menu icon
+var mySidenav = document.getElementById("mySidenav");
+
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+    } else {
+        mySidenav.style.display = 'block';
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
