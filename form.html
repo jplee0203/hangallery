@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Donation and Auction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+<head>
+    
+    <style>
+        
+    blue : #00BCD4;
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body {
+  background-image: url(006.jpg);
+  padding:20px 0;
+  color:#000000;
+  font-weight:bold;
+}
+
+input, select {
+  -webkit-appearance:none;
+  background:none;
+  border:2px solid #f1f1f1;
+  font-size:18px;
+  padding:5px 8px;
+  color:$blue;
+  width:100%;
+  max-width:100%;
+  z-index:2;
+  border-radius:0;
+}
+select {
+  font-size:18px;
+  padding:5px 10px;
+  color:$blue;
+}
+.form-item {
+  margin:10px 0;
+    margin-right: 20px;
+}
+.expires .form-item {
+  margin:0 0 10px 0;
+}
+.expires .form-item:after {
+  content:"\e114";
+  display:block;
+  font-family:'Glyphicons Halflings';
+  position:absolute;
+  right:25px;
+  top:8px;
+}
+label {
+  color:$blue;
+  font-size:16px;
+}
+.exp-label {
+  padding-left:px;
+  font-size:16px;
+  margin:5px 0;
+}
+input:active, input:focus, select:active, select:focus {
+  box-shadow:none;
+  outline:none;
+}
+#cc-form {
+  max-width:556px;
+  margin:0 auto;
+  border:2px solid #; 
+  padding:15px 20px;
+  background:#f7f7f7;
+}
+h1 {
+  max-width:560px;
+  margin:0 auto;
+  background:#ebcb48;
+  color:#fff;
+  padding:5px 20px;
+        }
+        
+  .glyphicon {
+    position:relative;
+    top:6px;
+    margin-right:10px;
+  }
+}
+input[type="submit"] {
+  background: #00BCD4;
+  color:#fff;
+  margin-top:5px;
+  transition:all .15s ease-in;
+  padding:8px 0;
+  font-size:20px;
+}
+
+input[type="submit"]:hover {
+  background:lighten(#00BCD4, 5%);
+  border-color:lighten(#00BCD4, 5%);
+}
+
+/***********button************/
+       button {
+  background: transparent;
+  width: 30%;
+  margin-top: 2em;
+  font-size: 1.3em;
+  border: solid 1px #000000;
+  padding: 1em 0;
+  color: #000000;
+  transition: all 0.6s;
+}
+button:hover {
+  cursor:pointer;
+  background: #edcb48;
+    
+}
+        
+        .btnposition{
+            padding-left: 40%;
+        }
+
+    </style>
+    
+</head>
+    
+<body>
+<div class="cc-form">
+  <h1><span class="glyphicon glyphicon-credit-card"></span>BID</h1>
+  <form id="cc-form">
+      
+      <div class="col-xs-8 form-item text">
+        <div>
+          <label for="number">Bid Amount</label>
+        </div>
+        <input type="number" name="Number" id="number" value="" placeholder="$26 or higher"/>
+      </div>
+    <div class="form-item text">
+      <div>
+        <label for="name">Name on card</label>
+      </div>
+      <input type="text" name="Name" id="name" value="">
+    </div>
+    <div class="row">
+      <div class="col-xs-8 form-item text">
+        <div>
+          <label for="number">Card number</label>
+        </div>
+        <input type="number" name="Number" id="number" value=""/>
+      </div>
+      <div class="col-xs-4 form-item text">
+        <div>
+          <label for="password">CVV</label>
+        </div>
+
+        <input type="text" name="CVV" id="cvv" value=""/>
+      </div>
+    </div>
+<div class="row expires">
+        <div class="exp-label">Expiry</div>
+  <div class="col-xs-6 form-item">
+    <div class="sr-only">
+          <label for="month" >Month</label>
+        </div>
+
+        <select id='month' name="month">
+    <option value=''>--Month--</option>
+    <option selected value='1'>January</option>
+    <option value='2'>February</option>
+    <option value='3'>March</option>
+    <option value='4'>April</option>
+    <option value='5'>May</option>
+    <option value='6'>June</option>
+    <option value='7'>July</option>
+    <option value='8'>August</option>
+    <option value='9'>September</option>
+    <option value='10'>October</option>
+    <option value='11'>November</option>
+    <option value='12'>December</option>
+    </select> 
+  </div>
+  <div class="col-xs-6 form-item">
+    <div class="sr-only">
+          <label for="year">Year</label>
+        </div>
+
+        <select name="year" id="year">
+          <option value=''>--Year--</option>
+    <option value='2016'>2016</option>
+    <option value='2017'>2017</option>
+    <option value='2018'>2018</option>
+    <option selected value='2016'>2016</option>
+    <option value='2020'>2020</option>
+    <option value='2021'>2021</option>
+          </select>
+  </div>
+</div>
+   
+      
+  </form>
+    <div class="btnposition">
+       <div class="button">  <a href="confirm.html"><button>BID</button></a></div>
+    </div>
+    </div>
+
+
+</body>
+</html>
